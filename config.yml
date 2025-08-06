@@ -1,0 +1,19 @@
+# 监控细分环节
+keywords:
+  - name: HJT
+    eia: ["HJT", "异质结", "年产.*GW.*HJT"]
+    customs_hs: ["84862010"]
+    patent_kw: ["异质结太阳能电池"]
+    min_bid_amount: 100_000_000   # 1 亿元
+  - name: 宠物疫苗
+    eia: ["宠物疫苗", "兽用疫苗"]
+    customs_hs: ["30023000"]
+    patent_kw: ["宠物疫苗"]
+    min_bid_amount: 50_000_000
+
+thresholds:
+  eia_hot: 3          # 7 天内环评/招标 ≥3
+  customs_mom: 0.5    # 海关环比 ≥50%
+  lhb_net_buy: 30_000_000  # 龙虎榜机构净买 ≥3000 万
+  block_premium: 0.03 # 大宗溢价 ≥3%
+  report_blank_days: 90  # 研报空白 90 天
